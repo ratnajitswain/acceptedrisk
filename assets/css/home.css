@@ -84,7 +84,9 @@ box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.2);
     letter-spacing: 0.04em !important;
     text-transform: capitalize !important;
 }
-
+.circle-button{  
+    font-size: 20px !important;
+}
 @media (min-width: 1200px){
     .container, .container-lg, .container-md, .container-sm, .container-xl {
         max-width: 1340px !important;

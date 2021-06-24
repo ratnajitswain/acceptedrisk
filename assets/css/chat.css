@@ -1,0 +1,105 @@
+.chat-box{  
+ display:none;
+bottom: 5rem;
+    position: absolute;
+    width: 24rem;
+    height: 30rem;
+    background:white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+  
+ 
+}
+.chat-head{  
+    padding-top: 10px;
+    padding-left: 10px;
+    width :100%;
+    height: 46px;
+left: 0px;
+top: 0px;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 151.31%;
+/* or 27px */
+
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+background: #0065FD;
+}
+.chat-persons{  
+  margin-top:10px;
+}
+
+.chat-p{  
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+    border-radius: 50%;
+    
+    background: #98C0FF;
+}
+.chat-c{  
+    width: 230px;
+height: 43px;
+padding-left: 20px;
+padding-right: 20px;
+background: #0065FD;
+box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 151.31%;
+/* or 21px */
+
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+}
+.chat-message{  
+  
+   bottom: 5rem;
+    right: 10px;
+    width: 110px;
+height: 40px;
+position: absolute;
+
+background: #C0D9FE;
+border-radius: 20px 20px 20px 0px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+
+.chat-i{  
+   
+    width: 100%;
+height: 50px;
+
+position: absolute;
+bottom:0;
+
+background: #FFFFFF;
+box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.17);
+border:0px;
+}
+.chat-send{  
+
+    right: 0%;
+    
+    bottom: 16.67%;
+    position:absolute;
+    Width : 28px;
+    Height :23.33px;
+}
+.chat-input{  
+    border:none;
+    outline:none;
+}
+.bi-telegram {  
+    
+    font-size: 30px;
+}

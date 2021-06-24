@@ -150,7 +150,8 @@ $(document).ready(function(){
          $(this).attr("class","bi bi-x nav-image")
          $('#sidebar1').attr("class","d-flex flex-column flex-shrink-0 p-3 bg-light")
          $('#sidebar2').attr("class","d-flex flex-column flex-shrink-0 bg-light d-none")
-         
+         $('.chat-box').hide(1000);
+         $('.color-palette').hide(1000);
      }
      else{  
          $(this).attr("class","bi bi-list nav-image")
