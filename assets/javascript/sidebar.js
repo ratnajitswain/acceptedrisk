@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+    
     $('#sidebar').html('')
 
     $('#sidebar').html(`
