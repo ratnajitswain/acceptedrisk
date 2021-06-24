@@ -104,5 +104,9 @@ box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.2);
         #sidebar2{  
             display: none !important;
         }
+        #sidebar1{  
+            position: fixed;
+        }
+
        
     }
