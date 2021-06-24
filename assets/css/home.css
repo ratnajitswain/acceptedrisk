@@ -4,7 +4,7 @@ body{
     font-family: Montserrat;
     background:url('/assets/images/utils/Rectangle\ 147.png')!important;
     background-repeat: no-repeat!important;
-    background-size: 50% !important;
+
     background-attachment: fixed!important;
     background-position: right!important; 
     
@@ -97,10 +97,7 @@ box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.2);
         .nav-imgtop{  
             margin: 0.5rem;
          }
-         body{
-            background-repeat:repeat;
-            background-size: 100% !important;
-         }
+         
     }
 
     @media (max-width:600px){
