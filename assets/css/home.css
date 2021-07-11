@@ -2,11 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Montserrat;
-    background:url('/assets/images/utils/Rectangle\ 147.png')!important;
-    background-repeat: no-repeat!important;
-
-    background-attachment: fixed!important;
-    background-position: right!important; 
+ background: linear-gradient(to right,white 50%, rgba(0, 101, 253, 0.15) 50%);
     
 
 }
@@ -112,3 +108,42 @@ box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.2);
 
        
     }
+    .swiper-slide .card-footer-home{  
+display: none !important;
+    }
+    .swiper-slide-active .card-footer-home{  
+        display: block !important;
+        position:absolute;
+        bottom:0;
+        width: 100%;
+        background: rgba(0, 101, 253, 0.5) !important;
+        height: 120px;
+    }
+    .card-footer-home-text{  
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 151.31%;
+        /* or 42px */
+        
+        letter-spacing: 0.1em;
+        text-transform: capitalize;
+        
+        color: #FFFFFF;
+    }
+    .card-footer-home-button{ 
+        font-weight: 600;
+font-size: 14px;
+line-height: 151.31%;
+/* or 21px */
+
+letter-spacing: 0.1em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+        
+height: 37px;
+
+
+background: #0065FD;
+border-radius: 5px;
+     }
