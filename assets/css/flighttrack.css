@@ -1,0 +1,49 @@
+.page_head_text{  
+    font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 151.31%;
+/* or 48px */
+
+letter-spacing: 0.15em;
+text-transform: capitalize;
+
+color: #000000;
+
+}
+
+.pho_left_text{  
+    font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 151.31%;
+/* or 42px */
+
+letter-spacing: 0.15em;
+text-transform: capitalize;
+
+color: #121212;
+}
+.pho_right_text{  
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #121212;
+}
+.pho_right_text select{  
+ 
+    margin-right: 15px;
+    outline: none;
+}
+
+.pho_right_text button{  
+    color: white;
+    background: #0065FD;
+    border-radius: 5px;
+}

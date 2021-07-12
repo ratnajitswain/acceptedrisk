@@ -7,11 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accepted Risk UI</title>
     <link rel="stylesheet" href="/assets/css/home.css" type="text/css">
-    <link rel="stylesheet" href="/assets/css/oversight.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/flighttrack.css" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
     <style>#mapid{
         height: 200px;
     }</style>
@@ -23,7 +29,15 @@
     <main class="d-flex">
         <div id="sidebar"></div>
         <div class="container">
-            <div id="mapid"></div>
+        <div class="page_heading">
+            <div class="page_head_text">Flight Tracking</div>
+            <div class="page_head_options d-flex justify-content-between">
+                    <div class="pho_left_text">Updated on: 05:24:00 PM</div>
+                    <div class="pho_right_text"><select class="p-2 mr-2"><option value="">Select From Avilabe Flight</option></select><button class="p-2 ">Apply</button></div>
+
+            </div>
+        </div>
+            <div class="mt-4" id="mapid"></div>
         </div>
 
     </main>
@@ -44,17 +58,16 @@
     <script src="/assets/javascript/sidebar.js"></script>
 
 <script>
-var mapboxAccessToken = "your access token here";
-    var map = L.map('map').setView([37.8, -96], 4);
-    
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken, {
-        id: 'mapbox/light-v9',
-        attribution: "",
-        tileSize: 512,
-        zoomOffset: -1
-    }).addTo(map);
-    
-    L.geoJson(statesData).addTo(map);</script>
+var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'your.mapbox.access.token'
+}).addTo(mymap);
+</script>
 
 </body>
 
