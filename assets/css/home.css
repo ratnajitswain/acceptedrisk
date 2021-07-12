@@ -147,3 +147,8 @@ height: 37px;
 background: #0065FD;
 border-radius: 5px;
      }
+
+     .card-footer-options2 .card-footer-home-button{  
+         width: 100% !important;
+        
+     }
