@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accepted Risk UI</title>
+    <link rel="stylesheet" href="/assets/css/home.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/flighttrack.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/strategyroom.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <style>#mapid{
+        height: 200px;
+    }</style>
+</head>
+
+<body>
+
+    <div id="navbarContainer"></div>
+    <main class="d-flex">
+        <div id="sidebar"></div>
+        <div class="container">
+        <div class="page_heading">
+            <div class="page_head_text">Strategy Room</div>
+
+            <div class="d-flex justify-content-start">
+                <lebel class="ml-5">set radius (in km)</lebel>
+                <lebel class="ml-5">upload shape file</lebel>
+                <lebel class="ml-5">upload data file</lebel>
+            </div>
+            <div class="page_head_options d-flex justify-content-start ">
+                
+                <div>
+                    <input type="text">
+                </div>
+                
+                <div class="upload-file d-flex justify-content-between ml-3">
+                    <p class="font-change mt-1">Choose a File</p>
+                    <button class="custom-file custom-file-upload1">Browse</button>
+                </div>
+                
+                <div class="upload-file d-flex justify-content-between">
+                    <p class="font-change mt-1">Choose a File</p>
+                    <button class="custom-file custom-file-upload2">Browse</button>
+                </div>
+                <input type="file" name="file1" class="d-none" placeholder="Choose File" id="file1">
+                <input type="file" name="file2" class="d-none" placeholder="Choose File" id="file2">
+                    
+
+            </div>
+        </div>
+            <div class="mt-4" id="mapid"></div>
+        </div>
+
+    </main>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <script src="/assets/javascript/navbar.js"></script>
+
+    <script src="/assets/javascript/sidebar.js"></script>
+
+<script>
+var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'your.mapbox.access.token'
+}).addTo(mymap);
+</script>
+
+</body>
+
+</html>

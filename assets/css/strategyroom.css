@@ -1,0 +1,33 @@
+.upload-file{  
+    margin-left: 25px !important;
+    padding-left: 10px;
+    height: 30px;
+    width: 300px !important;
+    background: #F4F4F4;
+    font-weight: 500;
+font-size: 12px;
+line-height: 151.31%;
+/* or 18px */
+
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #000000;
+}
+
+.custom-file{ 
+
+    height: 100%;
+    width:30%;
+    background: #0065FD;
+    font-weight: 500;
+font-size: 12px;
+line-height: 151.31%;
+/* or 18px */
+
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+ }
+ 
