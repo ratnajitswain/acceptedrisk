@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/assets/css/flighttrack.css" type="text/css">
     <link rel="stylesheet" href="/assets/css/strategyroom.css" type="text/css">
     <link rel="stylesheet" href="/assets/css/news.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/chat.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -20,9 +21,7 @@
    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
-    <style>#mapid{
-        height: 200px;
-    }</style>
+   
 </head>
 
 <body>
@@ -32,55 +31,51 @@
         <div id="sidebar"></div>
         <div class="container mt-5">
         <div class="page_heading">
-            <div class="page_head_text">Strategy Room</div>
-
-            <div class="d-flex justify-content-start">
-                <lebel class="">set radius (in km)</lebel>
-                <lebel class=" lebel-head">upload shape file</lebel>
-                <lebel class="lebel-head">upload data file</lebel>
-            </div>
-            <div class="page_head_options d-flex justify-content-start ">
-                
-                <div>
-                    <input type="text">
-                </div>
-                
-                <div class="upload-file d-flex justify-content-between ml-3">
-                    <p class="font-change mt-1">Choose a File</p>
-                    <button class="custom-file custom-file-upload1">Browse</button>
-                </div>
-                
-                <div class="upload-file d-flex justify-content-between">
-                    <p class="font-change mt-1">Choose a File</p>
-                    <button class="custom-file custom-file-upload2">Browse</button>
-                </div>
-                <input type="file" name="file1" class="d-none" placeholder="Choose File" id="file1">
-                <input type="file" name="file2" class="d-none" placeholder="Choose File" id="file2">
-                    
-
-            </div>
+            <div class="page_head_text">COVID-19 Speed data</div>
+            <div class="absolute">Absolute  </div>
+            <div class="mapGlobal">  </div>
+            
+           
         </div>
             <div class="mt-4" id="mapid"></div>
 
 
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-2"><div class="news-cards shadow"><img width="100%" src="/assets/images/utils/Rectangle 56.png"><div class="news-body-msg d-flex flex-column p-2"><span class="mb-auto">Health System Under Immense Pressure</span><a href="#">read more <i class="bi bi-arrow-right"></i></a></div></div></div>
-
-                    <div class="col-5">
-
-                        <div class="articles shadow p-2">
-
-                            <p class="articles-head">Articles</p>
-                        </div>
+            <div class=" d-flex justify-content-end ">
+                <div class="chat-box ">
+                    <div class="chat-head d-flex ">
+                        <p>Start Another Conversation</p>
                     </div>
-                    <div class="col-5">
-                        <div class="locations shadow p-2">
-
-                            <p class="locations-head">Locations</p>
+                    <div class="chat-persons">
+                        <div class="container d-flex ">
+                            <div class="chat-p"></div>
+                            <div class="chat-p"></div>
+                            <div class="chat-p"></div>
+                            <div class="chat-p"></div>
+                            <div class="chat-p"></div>
                         </div>
+
+                    </div>
+                    <hr>
+                    <div class="chat-connect container">
+                        <div class="chat-c d-flex align-items-center justify-content-between">Connect With Support <img
+                                src="/assets/images/utils/Vector.png"></div>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="chat-message d-flex align-items-end"></div>
+                    </div>
+
+
+                    <div class="chat-i d-flex bd-highlight container"> <input
+                            class="chat-input p-2 flex-fill bd-highlight" type="text"><i class="bi bi-telegram"></i></i>
                     </div>
                 </div>
+                <img class="chat-icon" src="/assets//images/utils/Group 6.png">
+            </div>
+
+            <div class="report-buttons d-flex align-items-center p-3">
+                <button class="btn btn-light ">Reports</button>
+                <button class="btn btn-light ms-3">deselect all</button>
             </div>
         </div>
 
@@ -100,7 +95,7 @@
     <script src="/assets/javascript/navbar.js"></script>
 
     <script src="/assets/javascript/sidebar.js"></script>
-
+    <script src="/assets/javascript/chat.js"></script>
 <script>
 var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {

@@ -112,4 +112,7 @@ border:0px;
     }
    
 }
-
+.chat-icon{
+    position: absolute;
+    bottom:0;
+}
