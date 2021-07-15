@@ -93,3 +93,61 @@ color: #FFFFFF;
     background:#fdfdfd !important;
     border-radius: 5px;
 }
+
+.graph-head p{  
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 124.3%;
+    /* or 22px */
+    
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    
+    color: #121212;
+}
+.graph-head{  
+    width: 100%;
+    height: 73px;
+
+
+
+background: #FFFFFF;
+box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.21);
+}
+
+.graph-head select,button {  
+    padding:5px;
+    width: 178px;
+height: 40px;
+    background: #FFFFFF;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 5px;
+
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+letter-spacing: 0.04em;
+text-transform: capitalize
+}
+
+.totaldeaths,.recovered,.totalcases{ 
+    height: 188px;
+    width:100%;
+    background: #FFFFFF;
+box-shadow: 0px 5px 17px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+ }
+.case-cards{  
+    font-weight: 600;
+font-size: 18px;
+
+
+
+letter-spacing: 0.05em;
+text-transform: capitalize;
+
+color: #121212;
+
+}

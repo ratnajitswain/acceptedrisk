@@ -1,0 +1,110 @@
+.chat-head{  
+    font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #050910;
+}
+.chat-head i{ 
+    color:#A8C8FB;
+ }
+.chat-sidebar{  
+    background: #F2F3FF;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.chat-search{  
+    text-transform: capitalize;
+    font-weight: 500;
+font-size: 16px;
+    outline:none;
+    border:none;
+    background: #D6E4E9;
+border-radius: 5px;
+}
+.chat-avtr{  
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    
+    color: #050910;
+    background: #A8C8FB;
+    width: 32px;
+height: 32px;
+border-radius: 50%;
+
+background: #A8C8FB;
+}
+
+.chat-notification{  
+    font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+    width: 20px;
+height: 20px;
+    border-radius: 50%;
+
+background: #A8C8FB;
+}
+.chat-username{  
+    font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+
+
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #050910;
+}
+
+.chat-user-message{  
+    font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #050910;
+}
+.chat-time{  
+    font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #050910;
+}
+
+.chat-main-box{  
+    background: #FFFFFF;
+}
+
+.chat-main-head{  
+    width: 100%;
+    height: 59px;
+    background: #FFFFFF;
+}
