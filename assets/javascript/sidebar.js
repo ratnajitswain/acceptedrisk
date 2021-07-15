@@ -50,8 +50,8 @@ $('body').append('<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist
               </div>
             </a>
             <ul class="dropdown-menu" aria-labelledby="Policies">
-              <li><a href="covidspeeddata.html" class="dropdown-item" type="button">Global Policies</a></li>
-              <li><a href="oversight.html" class="dropdown-item" type="button">Reopening Policies</a></li>
+              <li><a href="policies.html" class="dropdown-item" type="button">Global Policies</a></li>
+              <li><a href="covidapply.html" class="dropdown-item" type="button">Reopening Policies</a></li>
              
             </ul>
           </div>
