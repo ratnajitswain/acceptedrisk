@@ -61,19 +61,20 @@ text-transform: capitalize;
 
 color: #FFFFFF;
 }
-.chat-message{  
-  
-   bottom: 5rem;
-    right: 10px;
-    width: 110px;
-height: 40px;
-position: absolute;
+.chat-user1{  
 
+    margin-bottom: 15px;
 background: #C0D9FE;
-border-radius: 20px 20px 20px 0px;
-transform: matrix(-1, 0, 0, 1, 0, 0);
-}
+border-radius: 20px 20px 0px 20px;
 
+}
+.chat-user2{  
+
+margin-bottom: 15px;
+    background: #C0D9FE;
+    border-radius: 20px 20px 20px 0px;
+    
+    }
 
 .chat-i{  
    
@@ -115,4 +116,17 @@ border:0px;
 .chat-icon{
     position: absolute;
     bottom:0;
+}
+.chat-main-box-container{  
+    height:50%;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
 }
