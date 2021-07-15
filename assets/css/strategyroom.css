@@ -87,3 +87,9 @@ color: #FFFFFF;
  #mapid{
     height: 400px;
 }
+
+
+#myChart{  
+    background:#fdfdfd !important;
+    border-radius: 5px;
+}

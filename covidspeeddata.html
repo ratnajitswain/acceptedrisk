@@ -15,13 +15,13 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-   crossorigin=""/>
-   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
-   
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+      
 </head>
 
 <body>
@@ -30,54 +30,30 @@
     <main class="d-flex">
         <div id="sidebar"></div>
         <div class="container mt-5">
-        <div class="page_heading">
-            <div class="page_head_text">COVID-19 Speed data</div>
-            <div class="absolute">Absolute  </div>
-            <div class="mapGlobal">  </div>
-            
-           
-        </div>
-            <div class="mt-4" id="mapid"></div>
+            <div class="page_heading d-flex align-items-center">
+                <div class="page_head_text me-5">COVID-19 Speed data</div>
+                <div class="absolute  ms-5">
+                    <div class="form-check form-switch ">
 
+                        <label class="form-check-label" for="Absolute">Absolute</label>
 
-            <div class=" d-flex justify-content-end ">
-                <div class="chat-box ">
-                    <div class="chat-head d-flex ">
-                        <p>Start Another Conversation</p>
-                    </div>
-                    <div class="chat-persons">
-                        <div class="container d-flex ">
-                            <div class="chat-p"></div>
-                            <div class="chat-p"></div>
-                            <div class="chat-p"></div>
-                            <div class="chat-p"></div>
-                            <div class="chat-p"></div>
-                        </div>
-
-                    </div>
-                    <hr>
-                    <div class="chat-connect container">
-                        <div class="chat-c d-flex align-items-center justify-content-between">Connect With Support <img
-                                src="/assets/images/utils/Vector.png"></div>
-                    </div>
-                    <hr>
-                    <div class="container">
-                        <div class="chat-message d-flex align-items-end"></div>
+                        <input class="form-check-input" type="checkbox" id="Absolute">
                     </div>
 
-
-                    <div class="chat-i d-flex bd-highlight container"> <input
-                            class="chat-input p-2 flex-fill bd-highlight" type="text"><i class="bi bi-telegram"></i></i>
+                </div>
+                <div class="mapGlobal  ms-5">
+                    <div class="form-check form-switch ">
+                        <label class="form-check-label" for="MapGlobal">Map Global</label>
+    
+                        <input class="form-check-input" type="checkbox" id="MapGlobal">
                     </div>
                 </div>
-                <img class="chat-icon" src="/assets//images/utils/Group 6.png">
             </div>
-
-            <div class="report-buttons d-flex align-items-center p-3">
-                <button class="btn btn-light ">Reports</button>
-                <button class="btn btn-light ms-3">deselect all</button>
-            </div>
-        </div>
+            
+        <div class="mt-4" id="mapid"></div>
+<div class="container p-5 "> <canvas class="shadow" id="myChart"></canvas></div>
+       
+      
 
     </main>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
@@ -96,18 +72,22 @@
 
     <script src="/assets/javascript/sidebar.js"></script>
     <script src="/assets/javascript/chat.js"></script>
-<script>
-var mymap = L.map('mapid').setView([51.505, -0.09], 13);
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'your.mapbox.access.token'
-}).addTo(mymap);
-</script>
+    
 
+    <script>
+        var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: 'your.mapbox.access.token'
+        }).addTo(mymap);
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/assets/javascript/chart.js"></script>
 </body>
 
 </html>
