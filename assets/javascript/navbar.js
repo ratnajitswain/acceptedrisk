@@ -13,7 +13,7 @@ $(document).ready(function(){
             <img class="nav-imgtop" src="/assets/images/utils/Ellipse 1.png">
             <div class="line nav-imgtop"></div>
             <img class="nav-imgtop" src="/assets/images/utils/Group 127.png">
-            <img class="nav-imgtop" src="/assets/images/utils/Group 126.png">
+            <a href="messaging.html" target="_blank"><img class="nav-imgtop" src="/assets/images/utils/Group 126.png"></a>
             
         </div>
         </div>

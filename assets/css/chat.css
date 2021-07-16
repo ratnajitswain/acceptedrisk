@@ -117,6 +117,10 @@ border:0px;
     position: absolute;
     bottom:0;
 }
+
+.chat-icon:hover,.color-palette-btn:hover{
+    transform: scale(1.2);
+}
 .chat-main-box-container{  
     height:50%;
     overflow-y: scroll;

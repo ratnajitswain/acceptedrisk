@@ -61,6 +61,9 @@ box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.2);
 .nav-imgtop{  
    margin: 1rem;
 }
+.nav-imgtop:hover{  
+    transform: scale(1.2);
+ }
 
 .nav-link-text{  
     margin-left: 10px;
