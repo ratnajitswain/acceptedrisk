@@ -50,18 +50,19 @@
                     <input type="text">
                 </div>
                 
-                <div class="upload-file d-flex justify-content-between ml-3">
+                <div class="upload-file d-flex justify-content-between ml-3 file1">
                     <p class="font-change mt-1">Choose a File</p>
                     <button class="custom-file custom-file-upload1">Browse</button>
                 </div>
                 
-                <div class="upload-file d-flex justify-content-between">
+                <div class="upload-file d-flex justify-content-between file2">
                     <p class="font-change mt-1">Choose a File</p>
                     <button class="custom-file custom-file-upload2">Browse</button>
                 </div>
                 <input type="file" name="file1" class="d-none" placeholder="Choose File" id="file1">
                 <input type="file" name="file2" class="d-none" placeholder="Choose File" id="file2">
-                    
+                
+
 
             </div>
 
@@ -123,6 +124,11 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     zoomOffset: -1,
     accessToken: 'your.mapbox.access.token'
 }).addTo(mymap);
+
+
+$('.file1').on('click',()=>$('#file1').click());
+$('.file2').on('click',()=>$('#file2').click());
+
 </script>
 
 </body>
