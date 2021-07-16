@@ -169,3 +169,6 @@ border-radius: 20px 20px 20px 0px;
 
 
 }
+.chat-item:hover{
+    background:white;
+}
