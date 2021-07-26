@@ -1,10 +1,10 @@
 body{  
     margin: 0;
     padding: 0;
-    font-family: Montserrat;
+    font-family: Montserrat !important;
  background: linear-gradient(to right,white 50%, rgba(0, 101, 253, 0.15) 50%);
     
-
+ color: #050910;
 }
 .navbar{  
     width: 100%;
@@ -17,8 +17,8 @@ box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.2);
   
     left: 93px;
     top: 25px;
-    font-style: normal;
-    font-weight: 600;
+    font-style: italic;
+    font-weight: bold;
     font-size: 34px;
     line-height: 151.31%;
     /* or 51px */
@@ -26,8 +26,11 @@ box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.2);
     letter-spacing: 0.11em;
     text-transform: capitalize;
     
-    color: #000000;
+    
 }
+
+
+
 
 .nav-text2{  
     width: 137px;
@@ -43,7 +46,7 @@ box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.2);
     letter-spacing: 0.11em;
     text-transform: uppercase;
     
-    color: #000000;
+    
 }
 
 .nav-image{  
