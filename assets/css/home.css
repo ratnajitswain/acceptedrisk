@@ -162,13 +162,29 @@ body {
   right: 15%;
   border-radius: 10px 0px 10px 10px ;
 }
+.notificationCardSentiment {
+    display: none;
+    position: absolute;
+    background: #fafbfc;
+  
+    width: 350px;
+    z-index: 9999999999999999;
+    right: 25%;
+    border-radius: 10px 0px 10px 10px ;
+  }
 #notificationList {
    
   max-height: 25vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
-#notificationList li{  
+#notificationCardSentiment {
+   
+    max-height: 25vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+#notificationCardSentiment li{  
     
     padding: 10px 0 10px 0;
     border-bottom: 1px solid rgb(56, 50, 50);
