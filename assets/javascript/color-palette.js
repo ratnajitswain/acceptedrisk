@@ -34,7 +34,7 @@ var themeLocal = JSON.parse(localStorage.getItem('theme'))
             "text-decoration":"none"
         });
         $('.navbar').css({"background":"#"+theme.color1})
-        $('.navbar-brand').attr("style","color:#"+theme.color3 + "!important")
+        $('.navbar-brand').attr("style","color:#"+theme.color3 + " !important")
 
 
     }

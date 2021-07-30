@@ -78,17 +78,7 @@ $('body').append('<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist
 
           </li>
           <hr>
-          <li>
-            <a href="#" class="nav-link ">
-                <i class="bi bi-umbrella-fill"></i>
-                <div class="nav-link-text d-inline-flex">
-                    Weather And Events
-                  </div>
-             
-            </a>
-          </li>
-          <hr>
-          <li>
+         
             
 
 
@@ -107,7 +97,7 @@ $('body').append('<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist
           </li>
           <hr>
           <li>
-            <a href="#" class="nav-link ">
+            <a href="investigation.html" class="nav-link ">
                 <i class="bi bi-chat-fill"></i>
                 <div class="nav-link-text d-inline-flex">
                     Investigations
@@ -201,7 +191,7 @@ $('body').append('<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist
               </li>
               <hr>
               <li>
-                <a href="#" class="nav-link ">
+                <a href="investigation.html" class="nav-link ">
                     <i class="bi bi-chat-fill"></i>
                 
                   
