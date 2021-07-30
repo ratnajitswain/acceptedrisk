@@ -178,6 +178,12 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
 }
+#notificationListSentiment {
+   
+    max-height: 25vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 #notificationCardSentiment {
    
     max-height: 25vh;
