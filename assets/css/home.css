@@ -216,3 +216,6 @@ body {
 
     z-index: 999999999999;
 }
+ul{  
+    list-style: none;
+}
