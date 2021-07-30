@@ -156,7 +156,7 @@ body {
   display: none;
   position: absolute;
   background: #fafbfc;
-
+  overflow: hidden;
   width: 350px;
   z-index: 9999999999999999;
   right: 15%;
@@ -166,7 +166,8 @@ body {
     display: none;
     position: absolute;
     background: #fafbfc;
-  
+
+  overflow: hidden;
     width: 350px;
     z-index: 9999999999999999;
     right: 25%;
