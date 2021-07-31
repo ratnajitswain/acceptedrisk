@@ -13,8 +13,8 @@ $(document).ready(function () {
         </a>
             <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
                 <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#profileModal">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Add User</a></li>
-                <li><a class="dropdown-item" href="staticaddress.html">Static Address</a></li>
+                <li><a class="dropdown-item" href="adduser.html" target="_blank">Add User</a></li>
+                <li><a class="dropdown-item" href="staticaddress.html" target="_blank">Static Address</a></li>
                 <li><a class="dropdown-item" href="#">Logout</a></li>
             </ul>
         </div>

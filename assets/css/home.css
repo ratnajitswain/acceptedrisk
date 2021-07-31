@@ -232,3 +232,12 @@ ul{
 .dropend{  
     z-index:999999999999999999999999;
 }
+
+.permissions label{  
+  font-size: 12px !important;
+  font-weight:400 !important;
+}
+.file-upload-user a{  
+  text-decoration: none ;
+  color:inherit;
+}
