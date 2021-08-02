@@ -245,9 +245,12 @@
                         </div>
                     </div>
                     </div>
+                    <div class="row text-center image-centered"></div>
                     <div class=" row ">
                         <div class="chat-main-box-input d-flex  ">
-                            <input type="text " class="" placeholder="Write Your Message . . . "><i class=" bi bi-paperclip "></i><i onclick="send()" class="bi bi-telegram ms-5 send-message"></i>
+                            <input type="text " class="" placeholder="Write Your Message . . . "><i onclick="filesend()" class=" bi bi-paperclip "></i><i onclick="send()" class="bi bi-telegram ms-5 send-message"></i>
+
+                            <input type="file" class="d-none"name="image" id="imageupload">
                         </div>
                     </div>
                 </div>
