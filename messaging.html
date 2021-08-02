@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+<div class="audio-container"></div>
     <div id="navbarContainer"></div>
     <main class="d-flex">
         <div id="sidebar"></div>
@@ -41,6 +41,10 @@
 
                                 <div class="chat-user d-flex ">
                                     <div class="chat-avtr  d-flex justify-content-center pt-1">S</div>
+                                    <div class="online" > 
+                                    
+                                    </div>
+                                    
                                     <div class="chat-username ms-2">
                                         simon
                                         <div class="chat-user-message">
@@ -66,6 +70,7 @@
 
                                 <div class="chat-user d-flex ">
                                     <div class="chat-avtr  d-flex justify-content-center pt-1">S</div>
+                                    <div class="online" > </div>
                                     <div class="chat-username ms-2">
                                         simon
                                         <div class="chat-user-message">
@@ -89,8 +94,9 @@
                         <div class="chat-item row">
                             <div class="col d-flex justify-content-between">
 
-                                <div class="chat-user d-flex ">
+                                <div class="chat-user d-flex">
                                     <div class="chat-avtr  d-flex justify-content-center pt-1">S</div>
+                                    <div class="online" > </div>
                                     <div class="chat-username ms-2">
                                         simon
                                         <div class="chat-user-message">
@@ -232,26 +238,16 @@
 
                         </div>
                     </div>
-                    <div class="position-relative  chat-main-box-container  ">
-                        <div class="row position-absolute bottom-0 w-100">
-                            <div class=" d-flex justify-content-end">
-                                <div class="chat-user1 p-2 mt-4">I Am Ratnajit</div>
-                            </div>
-                            <div class=" d-flex justify-content-end">
-                                <div class="chat-user1 p-2 mt-4">I Am Ratnajit</div>
-                            </div>
-                            <div class=" d-flex justify-content-end">
-                                <div class="chat-user1 p-2 mt-4">I Am Ratnajit</div>
-                            </div>
-                            <div class=" d-flex justify-content-start">
-                                <div class="chat-user2 p-2 mt-4">I Am Ratnajit</div>
-                            </div>
+                    <div class="position-relative chat-main-box-container  ">
+                        <div class="container-fluid">
+                        <div class=" chat-message-container w-100" >
+                            
                         </div>
-                       
+                    </div>
                     </div>
                     <div class=" row ">
                         <div class="chat-main-box-input d-flex  ">
-                            <input type="text " class="" placeholder="Write Your Message . . . "><i class=" bi bi-paperclip "></i><i class="bi bi-telegram ms-5"></i>
+                            <input type="text " class="" placeholder="Write Your Message . . . "><i class=" bi bi-paperclip "></i><i onclick="send()" class="bi bi-telegram ms-5 send-message"></i>
                         </div>
                     </div>
                 </div>
@@ -273,6 +269,7 @@
 
     <script src="/assets/javascript/sidebar.js"></script>
     <script src="/assets/javascript/color-palette.js"></script>
+    <script src="/assets/javascript/msg.js"></script>
 
 
 </body>
