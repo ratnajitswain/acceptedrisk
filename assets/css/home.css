@@ -241,3 +241,7 @@ ul{
   text-decoration: none ;
   color:inherit;
 }
+
+i:hover{
+  transform: scale(1.2);
+}

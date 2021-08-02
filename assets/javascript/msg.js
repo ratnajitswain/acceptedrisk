@@ -63,6 +63,6 @@ ${time}
     $(".chat-main-box-input input").val("");
 
     $(".chat-main-box-container").scrollTop(
-        $(".chat-main-box-container").height()
+        $(".chat-message-container").height()
       );
 }
