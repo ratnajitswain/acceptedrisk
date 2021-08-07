@@ -66,18 +66,3 @@ ${time}
         $(".chat-message-container").height()
       );
 }
-
-
-filesend = () => {
-    $('#imageupload').click()
-    console.log($('#imageupload'))
-}
-
-// $('#imageupload').on('change',(e) => {
-//     const [file] = $('#imageupload')[0].files
-//     if (file) {
-//         $('.image-centered').html(`
-//         <img src="${URL.createObjectURL(file)}" class="position-absolute" >
-//         `)
-//     }
-//   })

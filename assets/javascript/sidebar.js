@@ -30,7 +30,7 @@ $('body').append('<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist
   </a>
   <ul class="dropdown-menu" aria-labelledby="Covid">
     <li><a href="covidspeeddata.html" class="dropdown-item" type="button">Global Covid Cases</a></li>
-    <li><a href="oversight.html" class="dropdown-item" type="button">Oversight</a></li>
+    <li><a href="#" class="dropdown-item" type="button">Oversight</a></li>
     <li><a href="covidspeeddata.html" class="dropdown-item" type="button">Forcasting</a></li>
   </ul>
 </div>
@@ -134,7 +134,7 @@ $('body').append('<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="Covid">
                       <li><a href="covidspeeddata.html" class="dropdown-item" type="button">Global Covid Cases</a></li>
-                      <li><a href="oversight.html" class="dropdown-item" type="button">Oversight</a></li>
+                      <li><a href="#" class="dropdown-item" type="button">Oversight</a></li>
                       <li><a href="covidspeeddata.html" class="dropdown-item" type="button">Forcasting</a></li>
                   </ul>
                   </div>
@@ -167,14 +167,6 @@ $('body').append('<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist
                 <li><a href="covidapply.html" class="dropdown-item" type="button">Global Level Instructions</a></li>
               </ul>
             </div>
-              </li>
-              <hr>
-              <li>
-                <a href="#" class="nav-link ">
-                    <i class="bi bi-umbrella-fill"></i>
-                   
-                 
-                </a>
               </li>
               <hr>
               <li>
